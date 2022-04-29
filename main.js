@@ -145,7 +145,7 @@ document.addEventListener("keydown",function(ev){
      }else if(ev.keyCode == 87){
         ev.preventDefault();
         bar_2.up();
-    }else if(ev.keyCode == 83){
+    }else if(ev.keyCode == 83){  
         ev.preventDefault();
         bar_2.down();
     } else if(ev.keyCode === 32){
@@ -155,6 +155,7 @@ document.addEventListener("keydown",function(ev){
 });
 
 
+board_view.draw();
 window.requestAnimationFrame(controller);
 setTimeout(function(){
     ball.direction = -1;
